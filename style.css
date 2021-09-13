@@ -1,7 +1,38 @@
 
-/* 
 
 
+/* Md.Khademul Islam */
 
+.h_top{
+   background-color: #F6F6F8;
+  
+}
+.header-text i{
+    color: #878787;
+}
 
-*/
+.header-text span{
+    color: #878787;
+    font-size: 13px;
+}
+#header-text_a a{
+    text-decoration: none;
+    color: #878787;
+}
+#header-text_a a:hover{
+    color:#62D2E3;
+}
+
+.header-text-mid p{
+    margin: 0;
+    color:#878787 ;
+    font-size: 13px;
+}
+
+.language_convert select{
+    border: none;
+}
+
+.language_convert option {
+    border: none;
+}
