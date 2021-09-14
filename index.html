@@ -16,13 +16,44 @@
         <!-- section 1 raihan vai  -->
         <section id="top-time">
         <div>
-            <div class="d-flex justify-content-lg-between align-items-center bg-danger p-1 text-white">
-                <div class="d-flex ">
+            <div class="d-flex justify-content-lg-between align-items-center bg-danger p-1 ">
+                <div class="d-flex mx-auto">
                     <p class="text-white">Today deal sale off <span class="fw-bold">70%</span>.end in</p>
-                    <p id="time-show" class="fw-bold"></p>
-                    <p class="ml-2">.Hurry up <i class="fas fa-long-arrow-alt-right"></i></p>
+                    <p id="time-show" class="fw-bold text-white"></p>
+                    <p class="text-white">.Hurry up <i class="fas fa-long-arrow-alt-right"></i></p>
                 </div>                                    
-            <button class="bg-danger text-white">sign-up</button>
+            <!-- <button onclick="signup()" class="bg-danger text-white">
+            </button> -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">sign Up</button>
+
+             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+             <h5 id="offcanvasRightLabel">sign-up</h5>
+             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+           </div>
+            <div class="offcanvas-body">
+            <!-- gmail-inputField -->
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+                
+          </div>
+         </div> 
+
+
         </div>
         
         </div>
@@ -51,6 +82,8 @@
         </section>
     
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 <script src="app.js"></script>
 </body>
 </html>
