@@ -14,14 +14,15 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.card-main{
+.card{
   /* border: 1px solid #000; */
   height: 390px;
+  width: 310px;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  
 }
+
 
 .card-main .card-text{
   position: absolute;
@@ -61,15 +62,17 @@ body{
   transition: transform 0.3s ease;
   color: white;
   font-size: 20px;
-  
+}
+.card-main .card-img img {
+  transition: all 0.3s ease;
 }
 
-/* .card-main:hover .card-img img{
+ /* .card-main:hover .card-img img{
   transition: transform 0.3s ease-in-out;
-}
+} 
 .card-main:hover .card-img img{
    transform: scale(1.05); 
-} */
+}  */
 
 .card-main:hover .card-text{
   opacity: 1;
@@ -78,11 +81,43 @@ body{
   transform: translateY(80px);
 }
 .card-main .card-text .btn-div .view:hover{
-  background: #111b27;
+  background: #0c131b;
 }
 .card-main .card-text .btn-div .view:hover span{
   display: none;
 }
 .card-main .card-text .btn-div .view:hover i{
   transform: translateY(-31px);
+}
+
+.card-main:hover #img1{
+  transform: translateX(-310px);
+}
+.card-main:hover #img2{
+   transform: translateX(-310px); 
+}
+
+
+.color-circle-div .color-circle{
+  padding: 10px;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+kbd{
+  filter: contrast(100%);
+}
+#img1{
+  /* filter: grayscale(100%); */
+}
+
+.color-circle:first-child{
+  background: rgb(175, 52, 52);
+}
+.color-circle:nth-child(2){
+  background: rgb(8, 139, 74);
+}
+.color-circle:nth-child(3){
+  background: rgb(11, 133, 149);
 }
